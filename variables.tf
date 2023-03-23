@@ -1,8 +1,8 @@
 ###cloud vars
 
 variable "sa_key_file" {
-  type = string
-  default = "key.json"
+  type        = string
+  default     = "key.json"
   description = "Service account key file"
 }
 
@@ -46,3 +46,10 @@ variable "vms_ssh_root_key" {
   default     = "ssh key"
   description = "ssh-keygen -t ed25519"
 }
+
+variable "image_name" {
+  type    = string
+  default = "ubuntu-2004-lts"
+  description = "Image relase name"
+}
+
