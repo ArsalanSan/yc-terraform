@@ -1,4 +1,4 @@
 locals {
-  vm_web_name = "netology-develop-platform-web"
-  vm_db_name  = "netology-develop-platform-db"
+  vm_web_name = var.vm_web_name
+  vm_db_name  = var.vm_db_name
 }
