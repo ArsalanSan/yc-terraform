@@ -44,11 +44,21 @@ variable "image_name" {
   description = "Image relase name"
 }
 
+### **** prefix name vms ****
+
+variable "prefix_name" {
+  type = map(string)
+  default = {
+    env     = "developer",
+    project = "platform"
+  }
+}
+
 ### **** vm_web ****
 
 variable "vm_web_name" {
   type    = string
-  default = "netology-develop-platform-web"
+  default = "web"
   description = "Instance name"
 }
 
@@ -68,11 +78,12 @@ variable "vm_web_resources" {
   description = "Costumize VM(core, RAM, core fraction)"
 }
 
+
 ### **** vm_db ****
 
 variable "vm_db_name" {
   type    = string
-  default = "netology-develop-platform-db"
+  default = "db"
   description = "Instance name"
 }
 
